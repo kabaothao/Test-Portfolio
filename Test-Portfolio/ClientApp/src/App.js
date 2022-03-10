@@ -4,11 +4,12 @@ import { Layout } from './components/Layout';
 import { Home } from './components/Home';
 import { FetchData } from './components/FetchData';
 import { Counter } from './components/Counter';
-import { Project } from './components/Project';
+//import { Project } from './components/Project';
 import { About } from './components/About';
 import { Contact } from './components/Contact';
 import { Skills } from './components/Skills';
 import { Testimonials } from './components/Testimonials';
+import Project from './components/Project';
 
 
 import './custom.css'
@@ -23,9 +24,9 @@ export default class App extends Component {
         <Route path='/About' component={About} />
         <Route path='/counter' component={Counter} />
         <Route path='/fetch-data' component={FetchData} />
-        <Route path='/project' component={Project} />
+        <Route path='/Project' component={Project} />
         <Route path='/Skills' component={Skills} />
-            <Route path='/Testmonials' component={Testimonials} />
+        <Route path='/Testmonials' component={Testimonials} />
         <Route path='/Contact' component={Contact} />
       </Layout>
     );
